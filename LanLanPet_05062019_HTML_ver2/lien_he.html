@@ -1,0 +1,577 @@
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <script src="bootstrap/js/jquery.min.js"></script>
+      <link rel="shortcut icon" href="images/logo_icon.png">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.js"></script>
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/menu.js"></script>
+      <link href="css/style.css" rel="stylesheet" />
+      <title>Liên hệ</title>
+   </head>
+   <body>
+      <div class="container-fulid pushmenu-push">
+         <div class="container container-cus scrollify-head">
+            <!-- header -->
+            <div class="col-xs-12 header">
+               <div class="col-xs-3 none-padding mobile-left">
+                  <section class="buttonset">
+                     <div id="nav_list"></div>
+                  </section>
+               </div>
+               <div class="col-xs-9 none-padding mobile-right">
+                  <div class="col-xs-12 none-padding mobile-logo">
+                     <img src="images/logo.svg" />
+                  </div>
+                  <div class="col-xs-12 none-padding mobile-action">
+                     <span><a href="javascript:void(0)"><img src="images/timkiem.svg"/></a></span>
+                     <span><a href="javascript:void(0)"><img src="images/giohang.svg"/></a></span>
+                     <span data-toggle="modal" data-target="#login"><a href="javascript:void(0)"><img src="images/user.svg"/></a></span>
+                  </div>
+                  <!-- pop up dang nhap -->
+                  <div class="modal fade modal-login" id="login" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- popup content-->
+                        <div class="modal-content">
+                           <div class="col-xs-12 none-padding modal-body">
+                              <div class="col-sm-6 none-padding div-img">
+                                 <img src="images/bg_login-01.jpg" />
+                              </div>
+                              <div class="col-sm-6 div-text">
+                                 <div class="input-group">
+                                    <p>ĐĂNG NHẬP</p>
+                                    <p>Bạn đã đăng ký tài khoản</p>
+                                    <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg"></button>
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/email.svg"/></span>
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/pass.svg"/></span>
+                                    <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                 </div>
+                                 <div class="input-group">
+                                    <div class="checkbox">
+                                       <input type="radio" id="ghinho" name="cc">
+                                       <label for="ghinho"><span></span>Quên mật khẩu</label>
+                                    </div>
+                                 </div>
+                                 <div class="input-group btn-login">
+                                    <a href="#">ĐĂNG NHẬP</a>
+                                    <a href="dangki.html">ĐĂNG KÝ</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header  -->
+            <!-- menu -->
+            <div class="col-xs-12 pushmenu-push">
+               <div class="col-xs-12 pushmenu pushmenu-left">
+                  <div class="col-xs-12  menu">
+                     <ul class="sidebar-menu">
+                        <li><span>MENU <strong id="close-menu"><img src="images/close.svg"/></strong></span></li>
+                        <li><a href="home.html"><span><img src="images/home.svg"/></span></a></li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>WHAT’S NEW</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="#">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Hàng mới về
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>DỊCH VỤ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Spa
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Khách sạn
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Vận chuyển
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Chăm sóc sức khỏe
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CỬA HÀNG</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu dropmenu-mega">
+                              <li class="col-xs-12 ">
+                                 <ul class="drop-menu">
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Thức ăn
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Xương và bánh thưởng
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Dinh dưỡng và thuốc
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Sản phẩm chăm sóc da và lông
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="col-xs-12 ">
+                                 <ul class="drop-menu">
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đệm nằm,nhà, chuồng
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bát ăn và bình nước
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Quần áo và phụ kiện
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Dụng cụ làm đẹp
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="col-xs-12 ">
+                                 <ul class="drop-menu">
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bàn cào móng
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Toilet và dụng cụ vệ sinh cho chó mèo
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÚ CƯNG TÌM CHỦ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Gâu gâu
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Meo meo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÔNG TIN</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống chó
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống mèo
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin tuyển dụng
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>SALE OFF</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>GIỚI THIỆU</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Về chúng tôi
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Đối tác
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Liên hệ
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end menu -->
+         </div>
+         <!-- content -->
+         <div class="col-xs-12 content content-item">
+            <!-- dich vu spa -->
+            <div class="col-xs-12">
+               <div class="container container-cus">
+                  <div class="col-xs-12 ">
+                     <div class="col-xs-12 breadcrumb-cus">
+                        <nav aria-label="breadcrumb">
+                           <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Liên hệ
+                              </li>
+                           </ol>
+                        </nav>
+                     </div>
+                     <div class="col-xs-12 chitiet-baiviet">
+                        <div class="col-xs-12  ">
+                           <div class="col-xs-12 register lienhe-form">
+                              <div class="col-sm-6 col-xs-12">
+                                 <div class="col-xs-12 modal-login ">
+                                    <div class="input-group">
+                                       <p>HỆ THỐNG CỬA HÀNG LANLANPET NGAY</p>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12 col-left">
+                                       <ul class="col-xs-12 none-padding">
+                                          <li>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/diachi1.svg"></span>
+                                                <span class="col-xs-12 none-padding">Cơ sở 1: 9A Hàm Long, Hoàn Kiếm, Hà Nội</span>
+                                             </div>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/dt1.svg"></span>
+                                                <span class="col-xs-12 none-padding">02439 285 285</span>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/diachi1.svg"></span>
+                                                <span class="col-xs-12 none-padding">Cơ sở 2: Biệt thự B16 - C11, khu đô thị mới Việt Hưng, Long Biên, Hà Nội</span>
+                                             </div>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/dt1.svg"></span>
+                                                <span class="col-xs-12 none-padding">02438 826 826</span>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/diachi1.svg"></span>
+                                                <span class="col-xs-12 none-padding">Cơ sở 3: Số 38 Nguyễn Phong Sắc,  Cầu Giấy, Hà Nội</span>
+                                             </div>
+                                             <div>
+                                                <span class="col-xs-12 none-padding"><img src="images/dt1.svg"></span>
+                                                <span class="col-xs-12 none-padding">02436 988 585</span>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-12 ">
+                                 <div class="col-xs-12 modal-login modal-padd-left">
+                                    <div class="input-group">
+                                       <p>QUÝ KHÁCH VUI LÒNG GỬI THÔNG TIN THEO FORM SAU</p>
+                                    </div>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><img src="images/user_login.svg"></span>
+                                       <input type="text" class="form-control" placeholder=" Họ tên">
+                                    </div>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><img src="images/phone_login.svg"></span>
+                                       <input type="text" class="form-control" placeholder="Số điện thoại của bạn">
+                                    </div>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><img src="images/email.svg"></span>
+                                       <input type="text" class="form-control" placeholder="Email của bạn">
+                                    </div>
+                                    <div class="input-group ">
+                                       <div class="col-xs-6">
+                                          <span class="input-group-addon"><img src="images/pass.svg"></span>
+                                          <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                       </div>
+                                       <div class="col-xs-6 col-group">
+                                          <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                       </div>
+                                    </div>
+                                    <div class="input-group ">
+                                       <div class="col-xs-6">
+                                          <span class="input-group-addon"><img src="images/mabv.svg"></span>
+                                          <input type="password" class="form-control" placeholder="Mã bảo vệ">
+                                       </div>
+                                       <div class="col-xs-6 col-group">
+                                          <div class="input-capcha">
+                                             <span><img src="images/capcha.png"></span>
+                                             <span><img src="images/reset.svg"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="input-group btn-login mar-top-15">
+                                       <a href="#">GỬI LIÊN HỆ</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xs-12  diachi-coso">
+                              <p><span>Cơ sở 1</span>: 9A Hàm Long, Hoàn Kiếm, Hà Nội</p>
+                              <div id="cs1" style="width: 100%; height: 350px;">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3537013301184!2d105.85236831428082!3d21.018528986003844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf29d0f355b%3A0xfe5582d5252c1426!2zOUEgSMOgbSBMb25nLCBQaGFuIENodSBUcmluaCwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540305482429" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                              </div>
+                           </div>
+                           <div class="col-xs-12  diachi-coso">
+                              <p><span>Cơ sở 2</span>: Biệt thự B16 - C11, khu đô thị mới Việt Hưng, Long Biên, Hà Nội</p>
+                              <div id="cs1" style="width: 100%; height: 350px;">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14893.100390673739!2d105.89786581916525!3d21.061672075686754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9bb6a531c7f%3A0x3cdc34c11e2eb1a!2zS2h1IMSRw7QgdGjhu4sgVmnhu4d0IEjGsG5nLCBWaeG7h3QgSMawbmcsIExvbmcgQmnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1540306703784" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>												
+                              </div>
+                           </div>
+                           <div class="col-xs-12  diachi-coso">
+                              <p><span>Cơ sở 3</span>: Số 38 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội</p>
+                              <div id="cs1" style="width: 100%; height: 350px;">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9032445929306!2d105.78781531428116!3d21.036557085994186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab36268c897b%3A0x218c0e42cd5cfee!2zMzggTmd1eeG7hW4gUGhvbmcgU-G6r2MsIEThu4tjaCBW4buNbmcsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1540306768749" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>											
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end dich vu spa -->
+            <!-- dich vu -->
+            <div class="col-xs-12 dichvu">
+               <div class="container container-cus">
+                  <div class="col-xs-12 ">
+                     <div class="col-xs-5 padd-right-15 ">
+                        <p class="title">DỊCH VỤ CUNG CẤP</p>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ làm đẹp cho thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ khách sạn cho thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ cung cấp sản phẩm chăm sóc, phụ kiện thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ nhân giống thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ vận chuyển thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ đào tạo cắt tỉa lông chó</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ khác</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-xs-7 ">
+                        <div class="col-xs-6 ">
+                           <p class="title">SẢN PHẨM CUNG CẤP</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Sản phẩm dành cho Chó</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Sản phẩm dành cho Mèo</a>
+                              </li>
+                           </ul>
+                           <p class="title">KIẾN THỨC CẦN BIẾT</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Kiến thức chăm sóc thú cưng</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Kiến thức mua đồ cho thú cưng</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-xs-6 padd-left-15">
+                           <p class="title">CÂU HỎI THƯỜNG GẶP</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Làm thế nào để đăng kí tài khoản</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Các bước để đặt hàng trên Website</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end dich vu -->
+            <!-- menu botom -->
+            <div class="col-xs-12 menu-bottom">
+               <div class="container container-cus">
+                  <div class="col-xs-12  menu">
+                     <ul class=" sidebar-menu">
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>LIÊN HỆ</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CHÍNH SÁCH SỬ DỤNG</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CHÍNH SÁCH BẢO MẬT</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÔNG TIN GIAO HÀNG</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>TRỢ GIÚP</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end menu botom -->
+            <!-- footer -->
+            <div class="col-xs-12 footer">
+               <div class="container container-cus">
+                  <div class="col-xs-12 none-padding">
+                     <div class="col-sm-4 col-xs-12 col-left">
+                        <img src="images/logo_footer.svg" />
+                        <ul class="col-xs-12 none-padding">
+                           <li>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                 <span class="col-xs-12 none-padding">Cơ sở 1: 9A Hàm Long, Hoàn Kiếm, Hà Nội</span>
+                              </div>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                 <span class="col-xs-12 none-padding">02439 285 285</span>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                 <span class="col-xs-12 none-padding">Cơ sở 2: Biệt thự B16 - C11, khu đô thị mới Việt Hưng, Long Biên, Hà Nội</span>
+                              </div>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                 <span class="col-xs-12 none-padding">02438 826 826</span>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                 <span class="col-xs-12 none-padding">Cơ sở 3: Số 38 Nguyễn Phong Sắc,  Cầu Giấy, Hà Nội</span>
+                              </div>
+                              <div>
+                                 <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                 <span class="col-xs-12 none-padding">02436 988 585</span>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-4 col-xs-12 col-center">
+                        <p>BẢN ĐỒ</p>
+                        <div class="col-xs-12 bando">
+                           <div id="map" style="width: 100%; height: 150px;">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3537013301184!2d105.85236831428082!3d21.018528986003844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf29d0f355b%3A0xfe5582d5252c1426!2zOUEgSMOgbSBMb25nLCBQaGFuIENodSBUcmluaCwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540305482429" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                        <div class="col-xs-12 lienhe">
+                           <img src="images/logo.svg" />
+                           <a href="javascript:void(0)"><img src="images/fb_like.svg" />Like page</a>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12 col-right">
+                        <p class="title">KẾT NỐI VỚI CHÚNG TÔI</p>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/youtube.svg" /></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/fb.svg" /></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/instagram.svg" /></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/google.svg" /></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/snap.svg" /></a>
+                           </li>
+                        </ul>
+                        <div><img src="images/phone.svg" /><span>0935 757 568</span></div>
+                        <div>
+                           <p>Nhập Email để nhận thông tin khuyến mãi</p>
+                           <input type="text" />
+                           <button>Đăng ký</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end footer -->
+         </div>
+         <!-- end content -->
+      </div>
+   </body>
+</html>

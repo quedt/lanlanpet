@@ -1,0 +1,598 @@
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <script src="bootstrap/js/jquery.min.js"></script>
+      <link rel="shortcut icon" href="images/logo_icon.png">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.js"></script>
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/menu.js"></script>
+      <link href="css/style.css" rel="stylesheet" />
+      <title>Bảng giá khách sạn</title>
+   </head>
+   <body>
+      <div class="container-fulid pushmenu-push">
+         <div class="container container-cus scrollify-head">
+            <!-- header -->
+            <div class="col-xs-12 header">
+               <div class="col-xs-3 none-padding mobile-left">
+                  <section class="buttonset">
+                     <div id="nav_list"></div>
+                  </section>
+               </div>
+               <div class="col-xs-9 none-padding mobile-right">
+                  <div class="col-xs-12 none-padding mobile-logo">
+                     <img src="images/logo.svg" />
+                  </div>
+                  <div class="col-xs-12 none-padding mobile-action">
+                     <span><a href="javascript:void(0)"><img src="images/timkiem.svg"/></a></span>
+                     <span><a href="javascript:void(0)"><img src="images/giohang.svg"/></a></span>
+                     <span>
+                        <a href="javascript:void(0)" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/user.svg"/></a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Thông tin cá nhân</a>
+                           <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                           <a class="dropdown-item" data-toggle="modal" data-target="#login">Đăng xuất</a>
+                        </div>
+                     </span>
+                     <span><a href="javascript:void(0)"><img src="images/ngonngu-01.svg"/></a></span>
+                  </div>
+                  <!-- pop up dang nhap -->
+                  <div class="modal fade modal-login" id="login" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- popup content-->
+                        <div class="modal-content">
+                           <div class="col-xs-12 none-padding modal-body">
+                              <div class="col-sm-6 none-padding div-img">
+                                 <img src="images/bg_login-01.jpg"/>
+                              </div>
+                              <div class="col-sm-6 div-text">
+                                 <div class="input-group">
+                                    <p>ĐĂNG NHẬP</p>
+                                    <p>Bạn đã đăng ký tài khoản</p>
+                                    <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg"></button>
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/email.svg"/></span>
+                                    <input type="text" class="form-control"  placeholder="Nhập địa chỉ Email của bạn">
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/pass.svg"/></span>
+                                    <input type="password" class="form-control"  placeholder="Nhập mật khẩu">
+                                 </div>
+                                 <div class="input-group">
+                                    <div class="checkbox">
+                                       <input type="radio" id="ghinho" name="cc">
+                                       <label for="ghinho"><span></span>Quên mật khẩu</label>
+                                    </div>
+                                 </div>
+                                 <div class="input-group btn-login">
+                                    <a href="#">ĐĂNG NHẬP</a>
+                                    <a href="dangki.html">ĐĂNG KÝ</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header  -->
+           <!-- menu -->
+            <div class="col-xs-12 pushmenu-push">
+               <div class="col-xs-12 pushmenu pushmenu-left">
+                  <div class="col-xs-12  menu">
+                     <ul class="sidebar-menu">
+                        <li><span>MENU <strong id="close-menu"><img src="images/close.svg"/></strong></span></li>
+                        <li><a href="home.html"><span><img src="images/home.svg"/></span></a></li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>WHAT’S NEW</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="san_pham_moi.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Hàng mới về
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>DỊCH VỤ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="dich_vu_spa.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Spa
+                                 <span class="row-arrow"></span>
+                                 </a>
+                                 <ul>
+                                    <li>
+                                       <a href="banggiacho.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá spa cho chó
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="banggiameo.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá spa cho mèo
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="datlichspa.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đặt lịch spa
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_khach_san.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Khách sạn
+                                 <span class="row-arrow"></span>
+                                 </a>
+                                 <ul>
+                                    <li>
+                                       <a href="banggiakhachsan.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá khách sạn
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="datlichkhachsan.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đặt lịch khách sạn
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_van_chuyen.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Vận chuyển
+                                 <span class="row-arrow"></span>
+                                 </a>
+                                 <ul>
+                                    <li>
+                                       <a href="banggiavanchuyen.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá vận chuyển
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="datlichvanchuyen.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đặt lịch vận chuyển
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_cham_soc_sk.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Chăm sóc sức khỏe
+                                 <span class="row-arrow"></span>
+                                 </a>
+                                 <ul>
+                                    <li>
+                                       <a href="banggiachamsoc.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá chăm sóc sức khỏe
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="datlichchamsoc.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đặt lịch chăm sóc sức khỏe
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_ban_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Dịch vụ bán chó
+                                 <span class="row-arrow"></span>
+                                 </a>
+                                 <ul>
+                                    <li>
+                                       <a href="banggiathamkhao.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Bảng giá các giống chó
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="datlichphoigiong.html">
+                                       <span class="glyphicon glyphicon-menu-right"></span> Đặt lịch phối giống chó
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CỬA HÀNG</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="cua_hang_sp_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Cửa hàng dịch vụ cho chó
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="cua_hang_sp_meo.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Cửa hàng dịch vụ cho mèo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÚ CƯNG TÌM CHỦ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Gâu gâu
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Meo meo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÔNG TIN</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="thong_tin_giong_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống chó
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="thong_tin_giong_meo.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống mèo
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="thong_tin_tuyen_dung.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin tuyển dụng
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="sale_off.html">
+                           <span>SALE OFF</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>GIỚI THIỆU</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="ve_chung_toi.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Về chúng tôi
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="doi_tac.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Đối tác
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="lien_he.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Liên hệ
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end menu -->
+         </div>
+         <!-- content -->
+         <div class="col-xs-12 content content-item">
+		 <!-- slider -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                  <div class="item active">
+                     <div class="banner-img">
+                        <img src="images/bg1-01.jpg" />
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="banner-img">
+                        <img src="images/bg1-01.jpg" />
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="banner-img">
+                        <img src="images/bg1-01.jpg" />
+                     </div>
+                  </div>
+               </div>
+               <!-- Left and right controls -->
+               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+           <!-- end slider -->
+		   <!-- dich vu spa -->
+            <div class="col-xs-12">
+               <div class="container container-cus">
+                  <!-- bang gia -->
+                     <div class="col-xs-12 banggia-dichvu">
+                        <p class="title-spa">BẢNG GIÁ DỊCH VỤ KHÁCH SẠN CHO THÚ CƯNG</p>
+                        <div class="col-xs-12 tbl-scroll">
+                           <table class="tbl-dichvu tbl-khachsan">
+                              <thead>
+                                 <th></th>
+                                 <th>CHÓ NHỎ (SMALL DOGS)</th>
+                                 <th>CHÓ NHỠ (MEDIUM DOGS)</th>
+                                 <th>CHÓ LỚN (BIG DOGS)</th>
+                                 <th>MÈO (CATS)</th>
+                                 <th>GỬI TRÊN 1 THÁNG (OVER 1 MONTH)</th>
+                                 <th>GỬI NGÀY TẾT (TET HOLIDAYS))</th>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>Đơn giá</td>
+                                    <td>200.000đ/đêm (night)</td>
+                                    <td>300.000đ/đêm (night)</td>
+                                    <td>400.000đ/đêm (night)</td>
+                                    <td>300.000đ/đêm (night)</td>
+                                    <td>Liên hệ (Ask)</td>
+                                    <td>Liên hệ (Ask)</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 none-padding datlich">
+                                <p>Khách hàng sử dụng dịch vụ khách sạn được ưu đãi giảm giá lên tới 30% các dịch vụ chăm sóc khác!</p>
+                               
+                            </div>
+					 <!-- end bang gia -->
+			   </div>
+            </div>
+            <!-- end dich vu spa -->
+            <!-- dich vu -->
+            <div class="col-xs-12 dichvu">
+               <div class="container container-cus">
+                  <div class="col-xs-12 ">
+                     <div class="col-xs-5 padd-right-15 ">
+                        <p class="title">DỊCH VỤ CUNG CẤP</p>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ làm đẹp cho thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ khách sạn cho thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ cung cấp sản phẩm chăm sóc, phụ kiện thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ nhân giống thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ vận chuyển thú cưng</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ đào tạo cắt tỉa lông chó</a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)">Dịch vụ khác</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-xs-7 ">
+                        <div class="col-xs-6 ">
+                           <p class="title">SẢN PHẨM CUNG CẤP</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Sản phẩm dành cho Chó</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Sản phẩm dành cho Mèo</a>
+                              </li>
+                           </ul>
+                           <p class="title">KIẾN THỨC CẦN BIẾT</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Kiến thức chăm sóc thú cưng</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Kiến thức mua đồ cho thú cưng</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-xs-6 padd-left-15">
+                           <p class="title">CÂU HỎI THƯỜNG GẶP</p>
+                           <ul>
+                              <li>
+                                 <a href="javascript:void(0)">Làm thế nào để đăng kí tài khoản</a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">Các bước để đặt hàng trên Website</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end dich vu -->
+            <!-- menu botom -->
+            <div class="col-xs-12 menu-bottom">
+               <div class="container container-cus">
+                  <div class="col-xs-12  menu">
+                     <ul class=" sidebar-menu">
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>LIÊN HỆ</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CHÍNH SÁCH SỬ DỤNG</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CHÍNH SÁCH BẢO MẬT</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÔNG TIN GIAO HÀNG</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>TRỢ GIÚP</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end menu botom -->
+            <!-- footer -->
+            <div class="col-xs-12 footer">
+               <div class="container container-cus">
+                  <div class="col-xs-12 none-padding">
+                     <div class="col-sm-4 col-xs-12 col-left">
+                        <img src="images/logo_footer.svg" />
+                        <ul class="col-xs-12 none-padding">
+                           <li class="active">
+                              <a data-toggle="tab" href="#cs1">
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                    <span class="col-xs-12 none-padding">Cơ sở 1: 9A Hàm Long, Hoàn Kiếm, Hà Nội</span>
+                                 </div>
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                    <span class="col-xs-12 none-padding">02439 285 285</span>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a data-toggle="tab" href="#cs2">
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                    <span class="col-xs-12 none-padding">Cơ sở 2: Biệt thự B16 - C11, khu đô thị mới Việt Hưng, Long Biên, Hà Nội</span>
+                                 </div>
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                    <span class="col-xs-12 none-padding">02438 826 826</span>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a data-toggle="tab" href="#cs3">
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                    <span class="col-xs-12 none-padding">Cơ sở 3: Số 38 Nguyễn Phong Sắc,  Cầu Giấy, Hà Nội</span>
+                                 </div>
+                                 <div>
+                                    <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                    <span class="col-xs-12 none-padding">02436 988 585</span>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-4 col-xs-12 col-center">
+                        <p>BẢN ĐỒ</p>
+                        <div class="col-xs-12 bando">
+                           <div class="tab-content">
+                              <div id="cs1" class="tab-pane fade in active">
+                                 <div id="map1" style="width: 100%; height: 150px;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3537013301184!2d105.85236831428082!3d21.018528986003844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf29d0f355b%3A0xfe5582d5252c1426!2zOUEgSMOgbSBMb25nLCBQaGFuIENodSBUcmluaCwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540305482429" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div id="cs2" class="tab-pane fade">
+                                 <div id="map2" style="width: 100%; height: 150px;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14893.100390673739!2d105.89786581916525!3d21.061672075686754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9bb6a531c7f%3A0x3cdc34c11e2eb1a!2zS2h1IMSRw7QgdGjhu4sgVmnhu4d0IEjGsG5nLCBWaeG7h3QgSMawbmcsIExvbmcgQmnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1540306703784" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>												
+                                 </div>
+                              </div>
+                              <div id="cs3" class="tab-pane fade">
+                                 <div id="map3" style="width: 100%; height: 150px;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9032445929306!2d105.78781531428116!3d21.036557085994186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab36268c897b%3A0x218c0e42cd5cfee!2zMzggTmd1eeG7hW4gUGhvbmcgU-G6r2MsIEThu4tjaCBW4buNbmcsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1540306768749" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>											
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xs-12 lienhe">
+                           <img src="images/logo.svg"/>
+                           <a href="javascript:void(0)"><img src="images/fb_like.svg"/>Like page</a>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12 col-right">
+                        <p class="title">KẾT NỐI VỚI CHÚNG TÔI</p>
+                        <ul>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/youtube.svg"/></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/fb.svg"/></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/instagram.svg"/></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/google.svg"/></a>
+                           </li>
+                           <li>
+                              <a href="javascript:void(0)"><img src="images/snap.svg"/></a>
+                           </li>
+                        </ul>
+                        <div><img src="images/phone.svg"/><span>0935 757 568</span></div>
+                        <div>
+                           <p>Nhập Email để nhận thông tin khuyến mãi</p>
+                           <input type="text" />
+                           <button>Đăng ký</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end footer -->
+         </div>
+         <!-- end content -->
+         <!-- chat truc tuyen -->
+         <div class="col-xs-12 position-chat">
+            <div class="col-xs-12 click-chat" id="chat-down">
+               <p><img src="images/tinnhan.svg"/>Để lại tin nhắn cho chúng tôi <img src="images/muitentrang.svg"/> </p>
+            </div>
+            <div class="col-xs-12 box-chat">
+               <div class="col-xs-12 head-chat click-chat" id="chat-up">
+                  <p>Liên hệ với chúng tôi <img src="images/muitentrang.svg"/></p>
+               </div>
+               <div class="col-xs-12 scroll-chat">
+                  <p>Hiện tại nhân viên của chúng tôi đang offline, xin vui lòng quay lại lúc khác</p>
+                  <input type="text" placeholder="Xin mời nhập họ tên"/>
+                  <p class="dangnhap-chat">Đăng nhập bằng <a href="#"><img src="images/fb1.svg"/></a> <a href="#"><img src="images/g+1.svg"/></a></p>
+                  <textarea rows="4" cols="50" placeholder="Hãy gửi tin nhắn cho chúng tôi về vấn đề của bạn"></textarea>
+                  <button>GỬI TIN NHẮN</button>
+               </div>
+            </div>
+         </div>
+         <!-- end chat truc tuyen -->
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1152 @@
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <script src="bootstrap/js/jquery.min.js"></script>
+      <link rel="shortcut icon" href="images/logo_icon.png">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.js"></script>
+      <script src="bootstrap/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/menu.js"></script>
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- scroll -->
+      <link rel="stylesheet" href="plugin/scrollify/style/main.css" />
+      <script src="plugin/scrollify/script/jquery.scrollify.min.js"></script>
+      <script src="plugin/scrollify/script/main.js"></script>
+      <title>Cửa hàng sản phẩm cho mèo</title>
+   </head>
+   <body>
+      <div class="container-fulid pushmenu-push">
+         <div class="container container-cus scrollify-head">
+            <!-- header -->
+            <div class="col-xs-12 header">
+               <div class="col-xs-3 none-padding mobile-left">
+                  <section class="buttonset">
+                     <div id="nav_list"></div>
+                  </section>
+               </div>
+               <div class="col-xs-9 none-padding mobile-right">
+                  <div class="col-xs-12 none-padding mobile-logo">
+                     <img src="images/logo.svg" />
+                  </div>
+                  <div class="col-xs-12 none-padding mobile-action">
+                     <span><a href="javascript:void(0)"><img src="images/timkiem.svg"/></a></span>
+                     <span><a href="javascript:void(0)"><img src="images/giohang.svg"/></a></span>
+                      <span><a href="javascript:void(0)" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/user.svg"/></a>
+					 <div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Thông tin cá nhân</a>
+						<a class="dropdown-item" href="#">Đổi mật khẩu</a>
+						<a class="dropdown-item" data-toggle="modal" data-target="#login">Đăng xuất</a>
+						
+					  </div>
+					 </span>
+					 <span><a href="javascript:void(0)"><img src="images/ngonngu-01.svg"/></a></span>
+                  </div>
+                  <!-- pop up dang nhap -->
+                  <div class="modal fade modal-login" id="login" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- popup content-->
+                        <div class="modal-content">
+                           <div class="col-xs-12 none-padding modal-body">
+                              <div class="col-sm-6 none-padding div-img">
+                                 <img src="images/bg_login-01.jpg"/>
+                              </div>
+                              <div class="col-sm-6 div-text">
+                                 <div class="input-group">
+                                    <p>ĐĂNG NHẬP</p>
+                                    <p>Bạn đã đăng ký tài khoản</p>
+                                    <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg"></button>
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/email.svg"/></span>
+                                    <input type="text" class="form-control"  placeholder="Nhập địa chỉ Email của bạn">
+                                 </div>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><img src="images/pass.svg"/></span>
+                                    <input type="password" class="form-control"  placeholder="Nhập mật khẩu">
+                                 </div>
+                                 <div class="input-group">
+                                    <div class="checkbox">
+                                       <input type="radio" id="ghinho" name="cc">
+                                       <label for="ghinho"><span></span>Quên mật khẩu</label>
+                                    </div>
+                                 </div>
+                                 <div class="input-group btn-login">
+                                    <a href="#">ĐĂNG NHẬP</a>
+                                    <a href="dangki.html">ĐĂNG KÝ</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header  -->
+           <!-- menu -->
+            <div class="col-xs-12 pushmenu-push">
+               <div class="col-xs-12 pushmenu pushmenu-left">
+                  <div class="col-xs-12  menu">
+                     <ul class="sidebar-menu">
+                        <li><span>MENU <strong id="close-menu"><img src="images/close.svg"/></strong></span></li>
+                        <li><a href="home.html"><span><img src="images/home.svg"/></span></a></li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>WHAT’S NEW</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="san_pham_moi.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Hàng mới về
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>DỊCH VỤ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="dich_vu_spa.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Spa
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_khach_san.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Khách sạn
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_van_chuyen.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Vận chuyển
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_cham_soc_sk.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Chăm sóc sức khỏe
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dich_vu_ban_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Bảng giá giống chó, mèo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>CỬA HÀNG</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="cua_hang_sp_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Cửa hàng dịch vụ cho chó
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="cua_hang_sp_meo.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Cửa hàng dịch vụ cho mèo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÚ CƯNG TÌM CHỦ</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Gâu gâu
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Meo meo
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>THÔNG TIN</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="thong_tin_giong_cho.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống chó
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="thong_tin_giong_meo.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin về các giống mèo
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="thong_tin_tuyen_dung.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Thông tin tuyển dụng
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="sale_off.html">
+                           <span>SALE OFF</span></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">
+                           <span>GIỚI THIỆU</span>
+                           <span class="arrow"></span>
+                           </a>
+                           <ul class="drop-menu">
+                              <li>
+                                 <a href="ve_chung_toi.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Về chúng tôi
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="doi_tac.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Đối tác
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="lien_he.html">
+                                 <span class="glyphicon glyphicon-menu-right"></span> Liên hệ
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- end menu -->
+         </div>
+         <!-- content -->
+         <div class="col-xs-12 content content-item">
+            <div class="col-xs-12 cuahang-cus">
+               <!-- pop up gio hang -->
+               <div id="giohang" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-giohang modal-lg">
+                     <!-- Modal content-->
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           <h4 class="modal-title"><img src="images/giohang.svg"/>GIỎ HÀNG</h4>
+                        </div>
+                        <div class="modal-body">
+                           <table class="tbl-spathem tbl-giohang">
+                              <thead>
+                                 <th>SẢN PHẨM</th>
+                                 <th>ĐƠN GIÁ</th>
+                                 <th>SỐ LƯỢNG</th>
+                                 <th>THÀNH TIỀN</th>
+                                 <th>THAO TÁC</th>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <img src="images/thuc-an3.jpg"/>
+                                       <p>Xúc xích khô thịt heo và carot 70g(dạng thanh) </p>
+                                    </td>
+                                    <td>
+                                       <p>129.000đ</p>
+                                    </td>
+                                    <td>
+                                       <div class="soluong">
+                                          <button>-</button>
+                                          <input type="text" value = "1"/>
+                                          <button>+</button>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p>129.000đ</p>
+                                    </td>
+                                    <td><a href="#">XÓA</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="modal-footer">
+                           <div class="bg-footer">
+                              <div class="giohang-text">
+                                 <p>Tổng cộng: <span>25.000đ</span></p>
+                                 <p>Khuyến mại khi sử dụng code: <span>0đ</span></p>
+                                 <p>Thanh toán: <span>25.000đ</span></p>
+                              </div>
+                              <div class="giohang-btn">
+                                 <button>ĐẶT HÀNG</button>
+                                 <button data-dismiss="modal">TIẾP TỤC MUA HÀNG</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end pop up -->
+               <section class="panel">
+                  <div class="inner">
+                     <img src = "images/bg1-01.jpg"/>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="1">
+                  <div class="col-xs-12">
+                     <p class="title-spa">THỨC ĂN DINH DƯỠNG</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang">
+                        <div class="col-xs-12 inner-img"><img src = "images/thucan_meo.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">ĐỒ ĂN CHO MÈO CON ME-O HƯƠNG VỊ CÁ BIỂN - 400G</p>
+                           <p class="price-sp">45.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="2">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/thucan_meo1.jpg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">ĐỒ ĂN CHO MÈO TRƯỞNG THÀNH ME-O HƯƠNG VỊ HẢI SẢN - 450G</p>
+                           <p class="price-sp">49.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="3">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/thucan_meo.jpg"/></span>
+                                 <p>THỨC ĂN CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thucan_meo1.jpg"/></span>
+                                 <p>THỨC ĂN CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thucan_meo.jpg"/></span>
+                                 <p>THỨC ĂN CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thucan_meo1.jpg"/></span>
+                                 <p>THỨC ĂN CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="4">
+                  <div class="col-xs-12">
+                     <p class="title-spa">THUỐC THÚ Y</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang">
+                        <div class="col-xs-12 inner-img"><img src = "images/thuoc_meo.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">ALKIN FUNGIKUR -THUỐC TRỊ NẤM CHO CHÓ MÈO </p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="5">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/thuoc_meo1.jpg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">FRONTLINE PLUS- THUỐC TRỊ VE RẬN NHỎ GÁY CHO MÈO</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="6">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc_meo1.jpg"/></span>
+                                 <p>THUỐC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc_meo1.jpg"/></span>
+                                 <p>THUỐC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc_meo1.jpg"/></span>
+                                 <p>THUỐC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc_meo1.jpg"/></span>
+                                 <p>THUỐC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="7">
+                  <div class="col-xs-12">
+                     <p class="title-spa">ĐỒ DÙNG CHO MÈO</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang ">
+                        <div class="col-xs-12 inner-img dodung"><img src = "images/balo.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">BALO DI CHUYỂN PHI HÀNH GIA (NHỰA) </p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="8">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/balo2.jpg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang dodung">
+                           <p class="ten-sp">TÚI PHI HÀNH GIA CHO CHÓ MÈO 44X26X31CM (NHIỀU MÀU)</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="9">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/vat_dung4.png"/></span>
+                                 <p>ĐỒ DÙNG CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/vat_dung5.jpg"/></span>
+                                 <p>ĐỒ DÙNG CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/vat_dung4.png"/></span>
+                                 <p>ĐỒ DÙNG CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/vat_dung5.jpg"/></span>
+                                 <p>ĐỒ DÙNG CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="10">
+                  <div class="col-xs-12">
+                     <p class="title-spa">TRANG PHỤC, PHỤ KIỆN VÀ TRANG SỨC THÚ CƯNG</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang ">
+                        <div class="col-xs-12 inner-img dodung"><img src = "images/qa1.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">SƯỜN XÁM CHO MÈO </p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="11">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/qao2.jpg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">VÒNG CỔ CHO MÈO</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="12">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/qa3.jpg"/></span>
+                                 <p>TRANG PHỤC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/qa4.jpg"/></span>
+                                 <p>TRANG PHỤC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/qa3.jpg"/></span>
+                                 <p>TRANG PHỤC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/qa4.jpg"/></span>
+                                 <p>TRANG PHỤC CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="13">
+                  <div class="col-xs-12">
+                     <p class="title-spa">SỮA TẮM CHO MÈO</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang ">
+                        <div class="col-xs-12 inner-img dodung"><img src = "images/sua_tam.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">SỮA TẮM 8IN1 PERFECT COAT CHO MÈO CON 295ML</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="14">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/sua_tam2.jpeg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">DẦU TẮM THẢO DƯỢC DERMALEEN 3 TRONG 1 CHO CHÓ</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="15">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc6.jpg"/></span>
+                                 <p>SỮA TẮM CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc8.jpg"/></span>
+                                 <p>SỮA TẮM CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc6.jpg"/></span>
+                                 <p>SỮA TẮM CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/thuoc8.jpg"/></span>
+                                 <p>SỮA TẮM CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="15">
+                  <div class="col-xs-12">
+                     <p class="title-spa">DỤNG CỤ VỆ SINH CHO MÈO</p>
+                  </div>
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang ">
+                        <div class="col-xs-12 inner-img dodung"><img src = "images/dungcu1.jpg"/></div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">DỤNG CỤ VỆ SINH CHO MÈO</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="16">
+                  <div class="container container-cus">
+                     <div class="col-xs-12 inner inner-cuahang inner-frame">
+                        <div class="col-xs-12 inner-img">
+                           <img src = "images/dungcu2.jpg"/>
+                        </div>
+                        <div class="col-xs-12 inner-title-cuahang">
+                           <p class="ten-sp">DỤNG CỤ VỆ SINH CHO MÈO</p>
+                           <p class="price-sp">450.000đ</p>
+                           <a href="chi_tiet_sp.html">XEM CHI TIẾT >></a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " data-section-name="17">
+                  <div class="container container-cus">
+                     <div class="inner">
+                        <div class="col-xs-12 thuc-an">
+                           <ul class="col-xs-12">
+                              <li class="col-xs-12">
+                                 <span><img src="images/dungcu3.jpg"/></span>
+                                 <p>DỤNG CỤ CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/dungcu4.jpg"/></span>
+                                 <p>DỤNG CỤ CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/dungcu3.jpg"/></span>
+                                 <p>DỤNG CỤ CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                              <li class="col-xs-12">
+                                 <span><img src="images/dungcu4.jpg"/></span>
+                                 <p>DỤNG CỤ CHO MÈO</p>
+                                 <div class="rating-star">
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia2.svg"/></i>
+                                    <i><img src="images/danhgia.svg"/></i>
+                                 </div>
+                                 <div class="gio-hang"><button data-toggle="modal" data-target="#giohang"><img src="images/giohang.svg"/></button></div>
+                                 <p class="price">125.000đ</p>
+                                 <a href="chi_tiet_sp.html">
+                                 Xem chi tiết >>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="col-xs-12 btn-all"><a href="list_san_pham.html">
+                              Xem tất cả các sản phẩm >>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="panel " >
+                  <div class="inner">
+                     <!-- dich vu -->
+                     <div class="col-xs-12 dichvu">
+                        <div class="container container-cus">
+                           <div class="col-xs-12 ">
+                              <div class="col-xs-5 padd-right-15 ">
+                                 <p class="title">DỊCH VỤ CUNG CẤP</p>
+                                 <ul>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ làm đẹp cho thú cưng</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ khách sạn cho thú cưng</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ cung cấp sản phẩm chăm sóc, phụ kiện thú cưng</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ nhân giống thú cưng</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ vận chuyển thú cưng</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ đào tạo cắt tỉa lông chó</a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)">Dịch vụ khác</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-xs-7 ">
+                                 <div class="col-xs-6 ">
+                                    <p class="title">SẢN PHẨM CUNG CẤP</p>
+                                    <ul>
+                                       <li>
+                                          <a href="javascript:void(0)">Sản phẩm dành cho Chó</a>
+                                       </li>
+                                       <li>
+                                          <a href="javascript:void(0)">Sản phẩm dành cho Mèo</a>
+                                       </li>
+                                    </ul>
+                                    <p class="title">KIẾN THỨC CẦN BIẾT</p>
+                                    <ul>
+                                       <li>
+                                          <a href="javascript:void(0)">Kiến thức chăm sóc thú cưng</a>
+                                       </li>
+                                       <li>
+                                          <a href="javascript:void(0)">Kiến thức mua đồ cho thú cưng</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-xs-6 padd-left-15">
+                                    <p class="title">CÂU HỎI THƯỜNG GẶP</p>
+                                    <ul>
+                                       <li>
+                                          <a href="javascript:void(0)">Làm thế nào để đăng kí tài khoản</a>
+                                       </li>
+                                       <li>
+                                          <a href="javascript:void(0)">Các bước để đặt hàng trên Website</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end dich vu -->
+                     <!-- menu botom -->
+                     <div class="col-xs-12 menu-bottom">
+                        <div class="container container-cus">
+                           <div class="col-xs-12  menu">
+                              <ul class=" sidebar-menu">
+                                 <li>
+                                    <a href="javascript:void(0)">
+                                    <span>LIÊN HỆ</span></a>
+                                 </li>
+                                 <li>
+                                    <a href="javascript:void(0)">
+                                    <span>CHÍNH SÁCH SỬ DỤNG</span></a>
+                                 </li>
+                                 <li>
+                                    <a href="javascript:void(0)">
+                                    <span>CHÍNH SÁCH BẢO MẬT</span></a>
+                                 </li>
+                                 <li>
+                                    <a href="javascript:void(0)">
+                                    <span>THÔNG TIN GIAO HÀNG</span></a>
+                                 </li>
+                                 <li>
+                                    <a href="javascript:void(0)">
+                                    <span>TRỢ GIÚP</span></a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end menu botom -->
+                  </div>
+               </section>
+               <section class="panel " >
+                  <div class="inner">
+                     <!-- footer -->
+                     <div class="col-xs-12 footer">
+                        <div class="container container-cus">
+                           <div class="col-xs-12 none-padding">
+                              <div class="col-sm-4 col-xs-12 col-left">
+                                 <img src="images/logo_footer.svg" />
+                                 <ul class="col-xs-12 none-padding">
+                                    <li >
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                          <span class="col-xs-12 none-padding">Cơ sở 1: 9A Hàm Long, Hoàn Kiếm, Hà Nội</span>
+                                       </div>
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                          <span class="col-xs-12 none-padding">02439 285 285</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                          <span class="col-xs-12 none-padding">Cơ sở 2: Biệt thự B16 - C11, khu đô thị mới Việt Hưng, Long Biên, Hà Nội</span>
+                                       </div>
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                          <span class="col-xs-12 none-padding">02438 826 826</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/diachi.svg" /></span>
+                                          <span class="col-xs-12 none-padding">Cơ sở 3: Số 38 Nguyễn Phong Sắc,  Cầu Giấy, Hà Nội</span>
+                                       </div>
+                                       <div>
+                                          <span class="col-xs-12 none-padding"><img src="images/dienthoai.svg" /></span>
+                                          <span class="col-xs-12 none-padding">02436 988 585</span>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-sm-4 col-xs-12 col-center">
+                                 <p>BẢN ĐỒ</p>
+                                 <div class="col-xs-12 bando">
+                                    <div id="map" style="width: 100%; height: 150px;">
+                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3537013301184!2d105.85236831428082!3d21.018528986003844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf29d0f355b%3A0xfe5582d5252c1426!2zOUEgSMOgbSBMb25nLCBQaGFuIENodSBUcmluaCwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540305482429" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-12 lienhe">
+                                    <img src="images/logo.svg"/>
+                                    <a href="javascript:void(0)"><img src="images/fb_like.svg"/>Like page</a>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4 col-xs-12 col-right">
+                                 <p class="title">KẾT NỐI VỚI CHÚNG TÔI</p>
+                                 <ul>
+                                    <li>
+                                       <a href="javascript:void(0)"><img src="images/youtube.svg"/></a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)"><img src="images/fb.svg"/></a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)"><img src="images/instagram.svg"/></a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)"><img src="images/google.svg"/></a>
+                                    </li>
+                                    <li>
+                                       <a href="javascript:void(0)"><img src="images/snap.svg"/></a>
+                                    </li>
+                                 </ul>
+                                 <div><img src="images/phone.svg"/><span>0935 757 568</span></div>
+                                 <div>
+                                    <p>Nhập Email để nhận thông tin khuyến mãi</p>
+                                    <input type="text" />
+                                    <button>Đăng ký</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end footer -->
+                  </div>
+               </section>
+            </div>
+         </div>
+         <!-- end content -->
+		  <!-- chat truc tuyen -->
+         <div class="col-xs-12 position-chat">
+            <div class="col-xs-12 click-chat" id="chat-down">
+               <p><img src="images/tinnhan.svg"/>Để lại tin nhắn cho chúng tôi <img src="images/muitentrang.svg"/> </p>
+            </div>
+            <div class="col-xs-12 box-chat">
+               <div class="col-xs-12 head-chat click-chat" id="chat-up">
+                  <p>Liên hệ với chúng tôi <img src="images/muitentrang.svg"/></p>
+               </div>
+               <div class="col-xs-12 scroll-chat">
+                  <p>Hiện tại nhân viên của chúng tôi đang offline, xin vui lòng quay lại lúc khác</p>
+                  <input type="text" placeholder="Xin mời nhập họ tên"/>
+                  <p class="dangnhap-chat">Đăng nhập bằng <a href="#"><img src="images/fb1.svg"/></a> <a href="#"><img src="images/g+1.svg"/></a></p>
+                  <textarea rows="4" cols="50" placeholder="Hãy gửi tin nhắn cho chúng tôi về vấn đề của bạn"></textarea>
+                  <button>GỬI TIN NHẮN</button>
+               </div>
+            </div>
+         </div>
+         <!-- end chat truc tuyen -->
+      </div>
+   </body>
+</html>
